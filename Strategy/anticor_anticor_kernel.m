@@ -5,11 +5,13 @@ function [weight, exp_w, exp_w2]...
 %
 % function [weight, exp_w, exp_w2]...
 %    = anticor_anticor_kernel(data, W, exp_ret, exp_w, data_day, exp_ret2, exp_w2)
-%
+% 函数参数为：
+% 配重：最终资产组合，第一区间专家配重，第二区间专家配重。
 % weight: final portfolio, used for next rebalance
 % exp_w: experts weights in the first fold
 % exp_w2: experts weights in the second fold
 %
+% 数据：市场序列参数，W：最大交易区间，专家数量为W-1
 % data: market sequence vectors
 % W: maximum window size, the number of experts (W-1)
 % exp_ret: experts' return in the first fold
